@@ -1,4 +1,4 @@
 # Julio Cesar
 
-Software Developer, with an interest in making web apps, databases, 
-and automatization with python.
+I'm a Junior developer, with an interest to create a career in the software 
+industry and progressing with a team.
