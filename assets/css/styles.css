@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700;900&display=swap');
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  /*--font-family: "Roboto", sans-serf;*/
+  --font-family: 'Encode Sans', sans-serif;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
