@@ -16,6 +16,11 @@
   --line-height: 1.7rem;
   --transition: 0.3s;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*Navbar*/
 /*.burger-menu {*/
   /*color: var(--primary-color);*/
