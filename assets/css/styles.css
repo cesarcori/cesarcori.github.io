@@ -103,10 +103,10 @@ nav ul li {
   margin: auto;
 }
 /*Hero - imagen fit*/
-.hero img {
-  height: 37.5rem;
-  width: 37.5rem;
-}
+/*.hero img {*/
+  /*height: 37.5rem;*/
+  /*width: 37.5rem;*/
+/*}*/
 
 .bio {
   width: 25rem;
