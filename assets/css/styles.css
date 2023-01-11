@@ -60,7 +60,7 @@ nav {
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-
+/*navbar - flex*/
 nav h1 {
   color: var(--primary-color);
 }
@@ -82,11 +82,13 @@ nav ul {
 nav ul li {
   font-weight: var(--bold-font);
 }
-/*.burger-menu {*/
-  /*color: var(--primary-color);*/
-  /*font-size: 2rem;*/
-  /*border: 0;*/
-  /*background-color: transparent;*/
-  /*cursor: pointer;*/
-  /*display: none;*/
-/*}*/
+
+/*navbar-burger-menu*/
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
