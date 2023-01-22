@@ -250,3 +250,8 @@ nav ul li {
   font-size: 0.875rem;
   outline: none;
 }
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
