@@ -369,10 +369,20 @@ footer {
   .more-about p {
     text-align: justify;
   }
+
   /*Skill section*/
   .icon {
     width: 5.875rem;
     height: 5.25rem;
+  }
+
+  /*Projects section*/
+ .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    width: 20.875rem;
   }
 }
 
