@@ -331,5 +331,13 @@ footer {
    nav ul li {
     margin: 8px;
   }
+
+ .burger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    transform: translateX(0);
+  }
 }
 
