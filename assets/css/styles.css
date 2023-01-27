@@ -369,5 +369,10 @@ footer {
   .more-about p {
     text-align: justify;
   }
+  /*Skill section*/
+  .icon {
+    width: 5.875rem;
+    height: 5.25rem;
+  }
 }
 
