@@ -273,3 +273,17 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
+
+/*social-accounts*/
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+}
+
+.socicon {
+  width: 4rem;
+  height: 4rem;
+}
