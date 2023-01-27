@@ -355,5 +355,19 @@ footer {
     margin-top: -7rem;
     width: 20.5rem;
   }
+
+  /*More about me*/
+ .more-about {
+    margin-top: 2rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .more-about h2 {
+    text-align: center;
+  }
+
+  .more-about p {
+    text-align: justify;
+  }
 }
 
