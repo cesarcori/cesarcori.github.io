@@ -339,5 +339,21 @@ footer {
   nav ul.show {
     transform: translateX(0);
   }
+  /*Hero section*/
+  .hero {
+    margin-top: -4rem;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero img {
+        height: 37.5rem;
+        width: 30rem;
+    }
+
+  .bio {
+    margin-top: -7rem;
+    width: 20.5rem;
+  }
 }
 
