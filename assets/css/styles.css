@@ -104,7 +104,7 @@ nav ul li {
 }
 /*Hero - imagen fit*/
 /*.hero img {*/
-  /*height: 37.5rem;*/
+  /*height: 20rem;*/
   /*width: 37.5rem;*/
 /*}*/
 
@@ -347,12 +347,13 @@ footer {
   }
 
   .hero img {
-        height: 37.5rem;
-        width: 30rem;
+      margin-top: 2rem;
+        /*height: 37.5rem;*/
+        /*width: 25rem;*/
     }
 
   .bio {
-    margin-top: -7rem;
+    margin-top: -2rem;
     width: 20.5rem;
   }
 
@@ -393,8 +394,9 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    /*margin-top: 2rem;*/
+    /*height: 37.5rem;*/
+    /*width: 20rem;*/
   }
 
   .bio {
