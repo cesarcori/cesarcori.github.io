@@ -394,9 +394,9 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    /*margin-top: 2rem;*/
+    margin-top: 2rem;
     /*height: 37.5rem;*/
-    /*width: 20rem;*/
+    width: 20rem;
   }
 
   .bio {
