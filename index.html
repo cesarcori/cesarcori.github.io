@@ -1,247 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--css-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--css-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
   <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 
-    <!--title-->
-    <title>Cesar Cori | Developer</title>
-  </head>
-  <body>
-    <!--Navbar-->
-    <nav>
-      <h1>Cesar Cori</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="https://cesarcori.github.io/blog/" class="nav-link">Blog</a></li>
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav> 
+  <!--title-->
+  <title>Cesar Cori | Developer</title>
+</head>
 
-    <!--Hero Section-->
+<body>
+  <!--Navbar-->
+  <nav>
+    <h1>Cesar Cori</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="https://cesarcori.github.io/blog/" class="nav-link">Blog</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
 
-    <!--I wanted to change to "about section", but the hero section is a section -->
-    <!--where you explain the main of your page. It's like a design pattern. -->
-    <!--Maintain the hero section.-->
-    <section class="hero" id="about">
-      <!--The imagen is free from:-->
-      <!--https://www.bistouille.fr/petit-prince-renard-svg-gratuit/-->
-      <img
-        src="https://www.bistouille.fr/wp-content/uploads/2021/10/Bistouille-Le-Petit-Prince-Gratuit.png"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Hi! I'm Julio Cesar Cori Ochoa, a developer that improves his 
-          skills. 
-        </p>
-      </div>
-    </section>
+  <!--Hero Section-->
 
-    <!--More about me-->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Working within a team is my main goal.
+  <!--I wanted to change to "about section", but the hero section is a section -->
+  <!--where you explain the main of your page. It's like a design pattern. -->
+  <!--Maintain the hero section.-->
+  <section class="hero" id="about">
+    <!--The imagen is free from:-->
+    <!--https://www.bistouille.fr/petit-prince-renard-svg-gratuit/-->
+    <img src="https://www.bistouille.fr/wp-content/uploads/2021/10/Bistouille-Le-Petit-Prince-Gratuit.png"
+      alt="jane-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Hi! I'm Julio Cesar Cori Ochoa, a developer that improves his
+        skills.
       </p>
-      <p>
-        One of my favorite things to do is go out for a walk with my dogs.
-      </p>
-      <p>
-        I like reading books.
-      </p>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills" id="skills" data-offset="100px" >
-      <h2 class="skill-header">My Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-html-5.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-css3.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-javascript.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/icons8-bootstrap.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-python.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="assets/icons/icons8-git.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/seguimiento-projecto.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Sistema de seguimiento y administración de proyectos de grado</h3>
-          <p class="project-details">
-          Present users: estudiante, tutor, docente, director, tribunal y administrador. <br>
-          The system improves the process of elaboration of a project degree, 
-          generates reports, and automates some repetitive tasks. The student 
-          has to unlock steps to achieve the main goal: make a project degree. 
-          </p>
-          <a href="https://github.com/cesarcori/etn1040_1" target="_blank" class="project-link">GitHub</a>
-          <a href="https://etn1040.pythonanywhere.com/" target="_blank" class="project-link">Demo</a>
-        </div>
-      </div>
-    </section>
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-      <h2>Contact me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/moqzvrea" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/julio-cesar-cori-ochoa-50ab2bbb/" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.svg"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/cesarcori" target="_blank"
-        ><img 
-          src="assets/icons/icons8-github.svg" 
-          alt="Github" 
-          class="socicon"
-      /></a>
     </div>
+  </section>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow-96.png"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
-    <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2022</p>
-      <p class="copy">
-        Built by Julio Cesar Cori Ochoa. <br>
-        Thanks author Kolade Chris 
-      </p>
-    </footer>
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+  <!--More about me-->
+  <section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Working within a team is my main goal.
+    </p>
+    <p>
+      One of my favorite things to do is go out for a walk with my dogs.
+    </p>
+    <p>
+      I like reading books.
+    </p>
+  </section>
 
-    <!-- Ion icons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-    </script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-    </script>
-  </body>
+  <!-- Skills section -->
+  <section class="skills" id="skills" data-offset="100px">
+    <h2 class="skill-header">My Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="https://eager-williams-af0d00.netlify.app/assets/icons/icons8-html-5.svg" alt="" loading="lazy"
+          class="icon icon-card" />
+        <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-vue-js.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icon-quasar.svg" alt="" loading="lazy" class="icon icon-card" />
+
+        <img src="assets/icons/icons8-node-js.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-express-js.svg" alt="" loading="lazy" class="icon icon-card" />
+
+        <img src="assets/icons/icons8-python.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-bash.svg" alt="" loading="lazy" class="icon icon-card" />
+
+      </div>
+
+      <!-- <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-python.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div> -->
+    </div>
+  </section>
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/images/seguimiento-projecto.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Sistema de seguimiento y administración de proyectos de grado</h3>
+        <p class="project-details">
+          Present users: estudiante, tutor, docente, director, tribunal y administrador. <br>
+          The system improves the process of elaboration of a project degree,
+          generates reports, and automates some repetitive tasks. The student
+          has to unlock steps to achieve the main goal: make a project degree.
+        </p>
+        <a href="https://github.com/cesarcori/etn1040_1" target="_blank" class="project-link">GitHub</a>
+        <a href="https://etn1040.pythonanywhere.com/" target="_blank" class="project-link">Demo</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Contact me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/moqzvrea" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+              class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/julio-cesar-cori-ochoa-50ab2bbb/" target="_blank"><img
+        src="assets/icons/icons8-linkedin-circled.svg" alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://github.com/cesarcori" target="_blank"><img src="assets/icons/icons8-github.svg" alt="Github"
+        class="socicon" /></a>
+  </div>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow-96.png" class="socicon up-arrow"
+      alt="scroll-up" /></i>
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2022</p>
+    <p class="copy">
+      Built by Julio Cesar Cori Ochoa. <br>
+      Thanks author Kolade Chris
+    </p>
+  </footer>
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+  </script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+  </script>
+</body>
+
 </html>
