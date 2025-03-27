@@ -1,9 +1,11 @@
 ---
-title: 'El reloj en ArchLinux'
-description: 'El reloj en ArchLinux'
-pubDate: '2022-04-02'
-heroImage: ''
+title: El reloj en Archlinux
+description: El reloj en Archlinux
+pubDate: 2022-04-02
 ---
+
+<!-- Written on April 02, 2022 -->
+<!-- # El reloj en Archlinux -->
 
 Hace mucho batalle con el tema del tiempo y ahora ya tengo la solución. 
 Comúnmente siempre tenía la hora con 5 minutos adelantado. 
