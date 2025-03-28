@@ -4,8 +4,8 @@ description: 'Reading files from a JavaScript'
 pubDate: '2025-03-27'
 ---
 
-I was trying trying to get a list of filenames from a directory into an array,
-so I decided to look for a solucion on the Internet for a solution. I found 
+I was trying to get a list of filenames from a directory into an array,
+so I decided to look for a solucion on the Internet. I found 
 the following method: `fs.readdir`: 
 
     fs.readdir(directoryPath, (err, files) => {
