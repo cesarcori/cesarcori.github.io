@@ -18,6 +18,8 @@ const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<slot />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>

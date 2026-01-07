@@ -1,11 +1,18 @@
 ---
 const { href } = Astro.props;
+const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, "");
+
+const subpath = pathname.match(/[^\/]+/g);
+
+const isActive = href === pathname || href === "/" + (subpath?.[0] || "");
 ---
 
 <a
-  class="hover:text-cyan-600 aria-[current=page]:text-cyan-600 aria-[current=page]:font-bold"
   href={href}
-  aria-current={Astro.url.pathname === href ? "page" : undefined}
+  aria-current={isActive ? "page" : undefined}
+  class="hover:text-cyan-600
+  aria-[current=page]:text-cyan-600
+  aria-[current=page]:font-bold"
 >
   <slot />
 </a>

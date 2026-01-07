@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @layer base {
-  p {
+  main {
     @apply mt-2 max-w-7xl mx-auto
   }
 }
