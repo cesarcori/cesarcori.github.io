@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@layer base {
+  p {
+    @apply mt-2 max-w-7xl mx-auto
+  }
+}
+
+@layer components {
+  .text-title {
+    @apply mt-2 text-4xl text-center;
+  }
+}
