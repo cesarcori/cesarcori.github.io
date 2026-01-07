@@ -1,5 +1,28 @@
+---
+import NavLink from "./NavLink.astro";
+---
+
 <nav class="flex h-16 items-center justify-evenly">
-  <a href="/">Home</a>
-  <a href="/blog">Blog</a>
-  <a href="/about">About</a>
+  <!-- <NavLink href="/">Home</NavLink> -->
+  <!-- <NavLink href="/blog">Blog</NavLink> -->
+  <a
+    class="hover:text-cyan-600 aria-[current=page]:text-cyan-600 aria-[current=page]:font-bold"
+    href="/"
+    aria-current={Astro.url.pathname === "/" ? "page" : undefined}
+  >
+    Home
+  </a>
+  <!-- <a
+    class="hover:text-cyan-600 aria-[current=page]:text-cyan-600 aria-[current=page]:font-bold"
+    href="/blog"
+    aria-current={Astro.url.pathname === "/blog" ? "page" : undefined}
+  >
+    Blog
+  </a> -->
+  <NavLink href="/about">About</NavLink>
+  <a
+    class="hover:text-cyan-600 aria-[current=page]:text-cyan-600"
+    href="/blog"
+    aria-current="page">Blog 2</a
+  >
 </nav>
