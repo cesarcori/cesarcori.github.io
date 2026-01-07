@@ -2,18 +2,6 @@
 const { href } = Astro.props;
 ---
 
-<!-- ---
-const { href } = Astro.props;
-const currentPath = Astro.url.pathname;
-const isActive = currentPath === href;
----
-
-<a
-  class={`hover:text-cyan-600 ${isActive ? "text-cyan-600 font-bold" : ""}`}
-  href={href}
->
-  <slot />
-</a> -->
 <a
   class="hover:text-cyan-600 aria-[current=page]:text-cyan-600 aria-[current=page]:font-bold"
   href={href}
