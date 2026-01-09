@@ -2,8 +2,16 @@
 import NavLink from "./NavLink.astro";
 ---
 
-<nav class="flex h-16 mt-2 items-center justify-evenly">
-  <NavLink href="/">Home</NavLink>
-  <NavLink href="/blog">Blog</NavLink>
-  <NavLink href="/about">About</NavLink>
-</nav>
+<div class="mx-auto max-w-7xl">
+  <nav class="flex h-16 mt-2 items-center justify-between">
+    <div class="flex items-center">
+      <img src="logo-cc.svg" alt="logo" class="h-8" />
+      <a class="ml-4 font-bold text-cyan-600" href="/">Cesar cori</a>
+    </div>
+    <div class="flex space-x-4">
+      <NavLink href="/">Home</NavLink>
+      <NavLink href="/blog">Blog</NavLink>
+      <NavLink href="/about">About</NavLink>
+    </div>
+  </nav>
+</div>
