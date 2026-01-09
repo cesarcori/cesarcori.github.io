@@ -11,8 +11,9 @@ const isActive = href === pathname || href === "/" + (subpath?.[0] || "");
   href={href}
   aria-current={isActive ? "page" : undefined}
   class="rounded-xl bg-gray-50 p-2 px-6
+  hover:bg-white
   hover:text-cyan-600
-  hover:bg-gray-200
+  hover:shadow-xl
   aria-[current=page]:text-gray-50
   aria-[current=page]:font-bold
   aria-[current=page]:bg-cyan-500"
