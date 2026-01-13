@@ -4,10 +4,36 @@
   main {
     @apply mt-2 max-w-7xl mx-auto
   }
+
+  p {
+    @apply mt-2 text-gray-800
+  }
+
+  h1 {
+    @apply text-gray-800 text-center font-bold text-2xl
+  }
+
+  pre {
+    /* padding: 1.5em; */
+    @apply p-[1.5em] rounded-lg my-3
+  }
 }
 
 @layer components {
   .text-title {
     @apply mt-2 text-4xl text-center;
+  }
+
+  .date {
+    @apply mt-0 text-gray-400
+  }
+
+  /* pre {
+    padding: 1.5em;
+    border-radius: 8px;
+  } */
+
+  pre>code {
+    all: unset;
   }
 }
