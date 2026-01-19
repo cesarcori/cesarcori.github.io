@@ -17,6 +17,11 @@
     /* padding: 1.5em; */
     @apply p-[1.5em] rounded-lg my-3
   }
+
+  footer {
+    @apply fixed bottom-0 w-full
+  }
+
 }
 
 @layer components {

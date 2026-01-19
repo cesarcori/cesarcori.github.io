@@ -3,6 +3,7 @@ import "../styles/global.css";
 import { SITE_TITLE_DEFAULT } from "../consts";
 
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 ---
@@ -21,5 +22,6 @@ const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 		<main class="max-sm:mt-8">
 			<slot />
 		</main>
+		<Footer />
 	</body>
 </html>

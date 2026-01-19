@@ -1,0 +1,13 @@
+---
+const today = new Date();
+import { SITE_TITLE_DEFAULT } from "../consts";
+import SocialLinks from "../components/SocialLinks.astro";
+---
+
+<footer class="flex justify-between bg-gray-100 py-4 px-50">
+  <p>
+    &copy; {today.getFullYear()}
+    {SITE_TITLE_DEFAULT}. All rights reserved
+  </p>
+  <SocialLinks />
+</footer>
