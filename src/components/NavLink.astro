@@ -10,12 +10,14 @@ const isActive = href === pathname || href === "/" + (subpath?.[0] || "");
 <a
   href={href}
   aria-current={isActive ? "page" : undefined}
-  class="rounded-md bg-gray-50 p-2 px-6
+  class="rounded-md
+  bg-gray-50
+  p-2 px-6
   hover:bg-white
   hover:text-cyan-600
   hover:shadow-xl
   aria-[current=page]:text-gray-50
-  aria-[current=page]:bg-cyan-600"
+  aria-[current=page]:bg-gradient-to-tl from-gray-300 via-cyan-600 to-white-600"
 >
   <slot />
 </a>
