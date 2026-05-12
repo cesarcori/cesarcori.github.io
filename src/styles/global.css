@@ -2,11 +2,15 @@
 
 @layer base {
   main {
-    @apply mt-2 mx-auto max-w-7xl md:px-6 sm:px-6 max-sm:px-8
+    @apply mt-2 mx-auto max-w-7xl md:px-6 sm:px-6 max-sm:px-8 pb-25
   }
 
   p {
-    @apply mt-2 text-gray-800
+    @apply mt-2 text-lg text-gray-700
+  }
+
+  li {
+    @apply mt-2 text-lg text-gray-700
   }
 
   h1 {
@@ -19,7 +23,7 @@
   }
 
   footer {
-    @apply fixed bottom-0 w-full
+    @apply fixed bottom-0 w-full h-20
   }
 
 }

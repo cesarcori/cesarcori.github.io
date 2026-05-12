@@ -3,19 +3,59 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-	<div class="sm:flex sm:justify-center space-x-20 mt-4 sm:p-8">
-		<img
-			class="h-[30vh] object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-70% max-sm:mx-auto"
-			alt="yo sonriendo"
-			src="/profile.jpeg"
-		/>
-		<div class="max-sm: mt-8">
-			<div class="text-title">Hello, everybody!</div>
-			<p>
-				Welcome to my webpage where you can learn all about me. Sometimes I
-				write some posts on my personal blog that might interest you. I'm a
-				software developer who enjoys challenges.
+	<div class="flex flex-col max-w-4xl mx-auto space-y-16">
+		<div
+			class="sm:flex sm:justify-center space-x-20 mt-8 md:mt-8 items-center"
+		>
+			<img
+				class="h-[30vh] object-cover mask-radial-at-center mask-radial-from-50% mask-radial-to-70% max-sm:mx-auto"
+				alt="yo sonriendo"
+				src="/profile.jpeg"
+			/>
+			<div class="max-sm:mt-8">
+				<div class="text-title">Hello, everybody!</div>
+				<p class="mt-4">
+					Hi! I'm Julio Cesar Cori Ochoa, a Full Stack Developer.
+				</p>
+			</div>
+		</div>
+		<div>
+			<div class="text-title">About me</div>
+			<p class="mt-4">
+				I am a engineer working as a software developer for more than 3
+				years, I am a self-taught developer and I am passionate about
+				learning new technologies.
 			</p>
 		</div>
+		<div>
+			<div class="text-title">Projects</div>
+			<p class="mt-4">I have been working on the next projects:</p>
+			<ul class="list-disc list-inside ml-4">
+				<li>System to manage university projects degree</li>
+			</ul>
+		</div>
+		<!-- <p class="mt-4">Experience:</p>
+		<ul class="list-disc list-inside">
+			<li>System to manage university projects degree</li>
+			<li>System to administrate Justice cases of the State</li>
+			<li>System of register lawyers and manage process of State</li>
+		</ul> -->
+		<div>
+			<div class="text-title">Skills</div>
+			<p class="mt-4">
+				Frontend: HTML, CSS, JavaScript, React, TypeScript, Bootstrap,
+				Vue.js, Quasar.js. <br />
+				Backend: Node.js, Express, Python, Flask, Java. <br />
+				Others: Git and Bash.
+			</p>
+		</div>
+		<!-- <div>
+			<div class="text-title">Contacts</div>
+			<p class="mt-4">
+				I am a engineer working as a software developer for more than 3
+				years, I am a self-taught developer and I am passionate about
+				learning new technologies.
+			</p>
+		</div> -->
 	</div>
 </BaseLayout>
