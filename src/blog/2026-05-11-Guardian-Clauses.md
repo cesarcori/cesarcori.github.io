@@ -1,5 +1,5 @@
 ---
-title: 'Guardian Clauses and how to open my mind'
+title: 'How Guard Clauses Help Me Open My Mind'
 description: 'How this method help me to open my mind'
 pubDate: 2026-05-11
 ---
