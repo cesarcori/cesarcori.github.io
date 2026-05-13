@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 
 const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 
-// const GA_ID = import.meta.env.PUBLIC_GA_ID;
+const GA_ID = import.meta.env.PUBLIC_GA_ID;
 ---
 
 <!doctype html>
@@ -22,9 +22,9 @@ const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 		<script
 			is:inline
 			async
-			src={`https://www.googletagmanager.com/gtag/js?id=G-D9G5DLZB7R`}
+			src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
 		></script>
-		<script is:inline>
+		<script is:inline define:vars={{ GA_ID }}>
 			window.dataLayer = window.dataLayer || [];
 			function gtag() {
 				dataLayer.push(arguments);
@@ -32,7 +32,7 @@ const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 			gtag("js", new Date());
 
 			// Now GA_ID is available here because of define:vars
-			gtag("config", "G-D9G5DLZB7R");
+			gtag("config", GA_ID);
 		</script>
 	</head>
 	<body>
