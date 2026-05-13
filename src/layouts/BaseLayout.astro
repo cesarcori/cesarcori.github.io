@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 
 const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 
-const GA_ID = import.meta.env.PUBLIC_GA_ID || process.env.PUBLIC_GA_ID;
+const GA_ID = import.meta.env.PUBLIC_GA_ID;
 ---
 
 <!doctype html>
@@ -19,19 +19,21 @@ const GA_ID = import.meta.env.PUBLIC_GA_ID || process.env.PUBLIC_GA_ID;
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<!-- Google tag (gtag.js) -->
-		{GA_ID ? (
-  <>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script is:inline define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag("js", new Date());
-      gtag("config", GA_ID);
-    </script>
-  </>
-) : (
-  <script is:inline>console.warn("Analytics ID missing. Check your ENV variables.");</script>
-)}
+		<script
+			is:inline
+			async
+			src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+		></script>
+		<script is:inline define:vars={{ GA_ID }}>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			// Now GA_ID is available here because of define:vars
+			gtag("config", GA_ID);
+		</script>
 	</head>
 	<body>
 		<Header />
