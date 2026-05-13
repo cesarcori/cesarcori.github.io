@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro";
 
 const { pageTitle = SITE_TITLE_DEFAULT } = Astro.props;
 
-const GA_ID = import.meta.env.PUBLIC_GA_ID;
+const GA_ID = process.env.PUBLIC_GA_ID;
 ---
 
 <!doctype html>
