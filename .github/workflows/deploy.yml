@@ -31,6 +31,16 @@ jobs:
           # build-cmd: pnpm run build # The command to run to build your site. Runs the package build script/task by default. (optional)
         # env:
           # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
+      - name: Verify Secret Presence
+        run: |
+          if [ -z "$TEST_ID" ]; then
+            echo "SECRET IS MISSING"
+            exit 1
+          else
+            echo "SECRET IS PRESENT"
+          fi
+        env:
+          TEST_ID: ${{ secrets.PUBLIC_GA_ID }}
 
   deploy:
     needs: build
