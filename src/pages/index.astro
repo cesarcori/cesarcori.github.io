@@ -1,5 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+import SkillCard from "../components/SkillCard.astro";
 ---
 
 <BaseLayout>
@@ -31,7 +33,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			<div class="text-title">Projects</div>
 			<p class="mt-4">I have been working on the next projects:</p>
 			<ul class="list-disc list-inside ml-4">
-				<li>System to manage university projects degree</li>
+				<li>
+					System to manage university projects degree.
+					<a
+						target="_blank"
+						href="https://github.com/cesarcori/etn1040_1"
+						>Ir al repositorio</a
+					>
+				</li>
 			</ul>
 		</div>
 		<!-- <p class="mt-4">Experience:</p>
@@ -41,14 +50,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			<li>System of register lawyers and manage process of State</li>
 		</ul> -->
 		<div>
-			<div class="text-title">Skills</div>
-			<p class="mt-4">
+			<!-- <div class="text-title mb-6">Skills</div> -->
+			<!-- <p class="mt-4">
 				Frontend: HTML, CSS, JavaScript, React, TypeScript, Bootstrap,
 				Vue.js, Quasar.js. <br />
 				Backend: Node.js, Express, Python, Flask, Java. <br />
 				Others: Git and Bash.
-			</p>
+			</p> -->
+			<SkillCard />
 		</div>
+
 		<!-- <div>
 			<div class="text-title">Contacts</div>
 			<p class="mt-4">
