@@ -2,7 +2,7 @@
 
 @layer base {
   main {
-    @apply mt-2 mx-auto max-w-7xl md:px-6 sm:px-6 max-sm:px-8 pb-25
+    @apply mt-2 mx-auto max-w-7xl md:px-6 sm:px-6 max-sm:px-8 pb-35 max-sm:pb-45
   }
 
   p {
@@ -23,7 +23,7 @@
   }
 
   footer {
-    @apply fixed bottom-0 w-full h-20
+    @apply fixed bottom-0 w-full h-25 max-sm:h-35
   }
 
 }
