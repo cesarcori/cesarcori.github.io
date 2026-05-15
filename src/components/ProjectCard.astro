@@ -1,0 +1,39 @@
+---
+const { badge, description, url } = Astro.props;
+---
+
+<div
+    class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200"
+>
+    <div class="md:flex">
+        <div class="p-8">
+            <!-- Badge -->
+            <div
+                class="uppercase tracking-wide text-sm text-cyan-600 font-semibold"
+            >
+                {badge}
+            </div>
+
+            <!-- Title -->
+            <!-- <h1
+                class="block mt-1 text-lg text-left leading-tight font-medium text-black"
+            >
+                {title}
+            </h1> -->
+
+            <!-- Description -->
+            <p class="mt-2 text-slate-500">
+                {description}
+            </p>
+
+            <!-- Action Button -->
+            <div class="mt-5">
+                <button
+                    class="px-4 py-2 bg-cyan-600 text-white text-sm font-medium rounded-lg hover:bg-cyan-700 transition-colors"
+                >
+                    <a target="_blank" href={url}>View Project</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

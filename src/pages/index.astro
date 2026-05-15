@@ -2,6 +2,26 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import SkillCard from "../components/SkillCard.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const developers = [
+	{
+		badge: "System to manage university projects degree",
+		description:
+			"This project was developed with Django, Python and Bootstrap.",
+		url: "https://github.com/cesarcori/etn1040_1",
+	},
+	{
+		badge: "Instagram clone",
+		description: "I build a clone of instagram with laravel 9.",
+		url: "https://github.com/cesarcori/instagram-clone-laravel",
+	},
+	// {
+	// 	badge: "Data Scientist",
+	// 	description: "Training models for predictive analytics.",
+	// 	url: "#",
+	// },
+];
 ---
 
 <BaseLayout>
@@ -32,35 +52,37 @@ import SkillCard from "../components/SkillCard.astro";
 		<div>
 			<div class="text-title">Projects</div>
 			<p class="mt-4">I have been working on the next projects:</p>
-			<ul class="list-disc list-inside ml-4">
-				<li>
-					System to manage university projects degree.
-					<a
-						target="_blank"
-						href="https://github.com/cesarcori/etn1040_1"
-						>Ir al repositorio</a
-					>
-				</li>
-			</ul>
-		</div>
-		<!-- <p class="mt-4">Experience:</p>
+			<div
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 p-6"
+			>
+				{
+					developers.map((dev) => (
+						<ProjectCard
+							badge={dev.badge}
+							description={dev.description}
+							url={dev.url}
+						/>
+					))
+				}
+			</div>
+			<!-- <p class="mt-4">Experience:</p>
 		<ul class="list-disc list-inside">
 			<li>System to manage university projects degree</li>
 			<li>System to administrate Justice cases of the State</li>
 			<li>System of register lawyers and manage process of State</li>
 		</ul> -->
-		<div>
-			<!-- <div class="text-title mb-6">Skills</div> -->
-			<!-- <p class="mt-4">
+			<div>
+				<div class="text-title mb-6">Technical Stack</div>
+				<!-- <p class="mt-4">
 				Frontend: HTML, CSS, JavaScript, React, TypeScript, Bootstrap,
 				Vue.js, Quasar.js. <br />
 				Backend: Node.js, Express, Python, Flask, Java. <br />
 				Others: Git and Bash.
 			</p> -->
-			<SkillCard />
-		</div>
+				<SkillCard />
+			</div>
 
-		<!-- <div>
+			<!-- <div>
 			<div class="text-title">Contacts</div>
 			<p class="mt-4">
 				I am a engineer working as a software developer for more than 3
@@ -68,5 +90,6 @@ import SkillCard from "../components/SkillCard.astro";
 				learning new technologies.
 			</p>
 		</div> -->
+		</div>
 	</div>
 </BaseLayout>
