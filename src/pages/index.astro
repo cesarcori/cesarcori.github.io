@@ -4,24 +4,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import SkillCard from "../components/SkillCard.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 
-const developers = [
-	{
-		badge: "System to manage university projects degree",
-		description:
-			"This project was developed with Django, Python and Bootstrap.",
-		url: "https://github.com/cesarcori/etn1040_1",
-	},
-	{
-		badge: "Instagram clone",
-		description: "I build a clone of instagram with laravel 9.",
-		url: "https://github.com/cesarcori/instagram-clone-laravel",
-	},
-	// {
-	// 	badge: "Data Scientist",
-	// 	description: "Training models for predictive analytics.",
-	// 	url: "#",
-	// },
-];
+import { PROJECTS } from "../data/portfolioData";
+
+// const developers = [
+// 	{
+// 		badge: "System to manage university projects degree",
+// 		description:
+// 			"This project was developed with Django, Python and Bootstrap.",
+// 		url: "https://github.com/cesarcori/etn1040_1",
+// 	},
+// 	{
+// 		badge: "Instagram clone",
+// 		description: "I build a clone of instagram with laravel 9.",
+// 		url: "https://github.com/cesarcori/instagram-clone-laravel",
+// 	},
+// 	// {
+// 	// 	badge: "Data Scientist",
+// 	// 	description: "Training models for predictive analytics.",
+// 	// 	url: "#",
+// 	// },
+// ];
 ---
 
 <BaseLayout>
@@ -56,11 +58,11 @@ const developers = [
 				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 sm:p-6 max-sm:p-0 max-sm:py-6"
 			>
 				{
-					developers.map((dev) => (
+					PROJECTS.map((project) => (
 						<ProjectCard
-							badge={dev.badge}
-							description={dev.description}
-							url={dev.url}
+							badge={project.badge}
+							description={project.description}
+							url={project.url}
 						/>
 					))
 				}
