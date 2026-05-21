@@ -1,3 +1,7 @@
+---
+import { SKILLS } from "../data/portfolioData";
+---
+
 <div
     class="max-w-4xl mx-auto bg-grey-100 text-slate-800 rounded-2xl shadow-lg overflow-hidden border border-slate-200"
 >
@@ -20,46 +24,13 @@
                     Frontend
                 </h3>
                 <div class="flex flex-wrap gap-2">
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-red-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >HTML</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-blue-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >CSS</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-yellow-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >JavaScript</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-blue-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >TypeScript</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-violet-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Bootstrap</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-sky-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Quasar.js</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-orange-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Astro</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-sky-500 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >React</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-green-500 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Vue.js</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-indigo-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Tailwind</span
-                    >
+                    {
+                        SKILLS.frontend.map((skill) => (
+                            <span class="px-3 py-1 bg-cyan-500/10 text-cyan-600 rounded-md border border-cyan-600/20 text-sm font-medium">
+                                {skill}
+                            </span>
+                        ))
+                    }
                 </div>
             </div>
 
@@ -71,34 +42,13 @@
                     Backend
                 </h3>
                 <div class="flex flex-wrap gap-2">
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-red-400 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Java</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-yellow-500 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Python</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-orange-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Flask</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-green-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Node.js</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-green-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Express.js</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-indigo-500 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >REST APIs</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-blue-500 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >PostgreSQL</span
-                    >
+                    {
+                        SKILLS.backend.map((skill) => (
+                            <span class="px-3 py-1 bg-cyan-500/10 text-cyan-600 rounded-md border border-cyan-600/20 text-sm font-medium">
+                                {skill}
+                            </span>
+                        ))
+                    }
                 </div>
             </div>
 
@@ -110,22 +60,13 @@
                     Infrastructure & Environment
                 </h3>
                 <div class="flex flex-wrap gap-2">
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-gray-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Docker</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-gray-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Linux (Arch/Fedora/Ubuntu/Debian)</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-gray-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Bash</span
-                    >
-                    <span
-                        class="px-3 py-1 bg-cyan-500/10 text-gray-600 rounded-md border border-cyan-600/20 text-sm font-medium"
-                        >Git</span
-                    >
+                    {
+                        SKILLS.infrastructure.map((skill) => (
+                            <span class="px-3 py-1 bg-cyan-500/10 text-cyan-600 rounded-md border border-cyan-600/20 text-sm font-medium">
+                                {skill}
+                            </span>
+                        ))
+                    }
                 </div>
             </div>
         </div>
