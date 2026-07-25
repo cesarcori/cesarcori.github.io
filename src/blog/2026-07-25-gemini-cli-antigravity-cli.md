@@ -4,37 +4,32 @@ description: 'Knowing about the main differences of Gemini CLI and Antigravity C
 pubDate: 2026-07-25 
 ---
 
-This is something what I never discover because in a first place.
-I was trying to install Gemini CLI, I had no idea that it was another 
-AI CLI created by Google that is Antigravity CLI. How I know it?
-Let me share that experience with you.
+Here is something I never expected to discover in the first place.
 
-In the moment when I was starting the first configuration
-Gemini CLI gives me the option to use two ways for use the app:
-sing-in or by API key configuration. 
-Obviously I chose the faster: sing-in, but at the moment when 
-it has to finished something happening. The prompt said me that 
-I can't use the way sing-in! If I want to use it I have to use
-Antigravity CLI. 
+I was originally trying to install Gemini CLI, with no idea that Google had created 
+another AI CLI called Antigravity CLI. How did I find out? Let me share that experience with you.
 
-I was so confuse because why you give that option and then you
-said me that I can't do that. Well I think that is a good option
-to create a spark in your mind and then hook your attention because
-it works on me! I had to ask Gemini Platform to explain me what is the
-difference between those and it said me:
+When I was setting up the initial configuration, Gemini CLI gave me two options to 
+authenticate: Sign-in or API Key.
 
-Gemini CLI: It gives you all the response in text, not modify 
-nothing in your folder.
+Naturally, I chose the faster option: sign-in. But right when it was finishing, something 
+went wrong. A message popped up saying I couldn't use sign-in mode for Gemini CLI, and 
+if I wanted to sign in that way, I had to use Antigravity CLI instead!
 
-Antigravity CLI: It give you the option to make modifications 
-in your folder, create projects and so on. 
+I was so confused—why offer the option if you can't use it? But honestly, maybe it 
+was a clever way to spark my curiosity and grab my attention, because it definitely 
+worked on me! I asked Gemini to explain the difference, and here is what it told me:
 
-Honestly I didn't that because I was using Gemini CLI and Antigravity IDE
-but I haven't listen about Antigravity CLI. Now that I know I have
-to use it, hehehehe. 
+Gemini CLI: Provides responses strictly in text form without modifying anything 
+in your local folders.
 
-That is my little experience that I want to share with someone in
-the net, maybe it works for someone. 
+Antigravity CLI: Gives you the ability to make changes to your local files, create 
+new project structures, and execute commands directly.
 
-I hope you enjoy this little reading. See you in other post. Goodbye.
+While I was already familiar with Gemini CLI and the Antigravity IDE, Antigravity 
+CLI was completely new to me. Now that I know what it does, I’m definitely giving it a spin!
 
+That’s my quick story for today. I wanted to share it with the community—hopefully, 
+someone out there finds it helpful.
+
+Thanks for reading, and see you in the next post!
