@@ -1,5 +1,5 @@
 ---
-const { badge, description, url } = Astro.props;
+const { badge, description, url, demo } = Astro.props;
 ---
 
 <div
@@ -26,12 +26,18 @@ const { badge, description, url } = Astro.props;
                 {description}
             </p>
 
-            <!-- Action Button -->
+            <!-- Buttons -->
             <div class="mt-5">
                 <button
                     class="px-4 py-2 bg-cyan-600 text-white text-sm font-medium rounded-lg hover:bg-cyan-700 transition-colors"
                 >
-                    <a target="_blank" href={url}>View Project</a>
+                    <a href={url}>View Repository</a>
+                </button>
+                <button
+                    hidden={!demo || demo === ""}
+                    class="px-4 py-2 bg-cyan-600 text-white text-sm font-medium rounded-lg hover:bg-cyan-700 transition-colors"
+                >
+                    <a href={demo}>View Demo</a>
                 </button>
             </div>
         </div>
